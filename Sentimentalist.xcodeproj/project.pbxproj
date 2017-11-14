@@ -13,6 +13,7 @@
 		8F7CF78B1FBBA799006A525B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7CF78A1FBBA799006A525B /* Assets.xcassets */; };
 		8F7CF78E1FBBA799006A525B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7CF78C1FBBA799006A525B /* LaunchScreen.storyboard */; };
 		8F7CF7991FBBA799006A525B /* SentimentalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7981FBBA799006A525B /* SentimentalistTests.swift */; };
+		8F7CF7A41FBBABD1006A525B /* SentimentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7A31FBBABD1006A525B /* SentimentAnalyzer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8F7CF7941FBBA799006A525B /* SentimentalistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentalistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7CF7981FBBA799006A525B /* SentimentalistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentalistTests.swift; sourceTree = "<group>"; };
 		8F7CF79A1FBBA799006A525B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7CF7A31FBBABD1006A525B /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8F7CF78A1FBBA799006A525B /* Assets.xcassets */,
 				8F7CF78C1FBBA799006A525B /* LaunchScreen.storyboard */,
 				8F7CF78F1FBBA799006A525B /* Info.plist */,
+				8F7CF7A31FBBABD1006A525B /* SentimentAnalyzer.swift */,
 			);
 			path = Sentimentalist;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7CF7A41FBBABD1006A525B /* SentimentAnalyzer.swift in Sources */,
 				8F7CF7861FBBA799006A525B /* ViewController.swift in Sources */,
 				8F7CF7841FBBA799006A525B /* AppDelegate.swift in Sources */,
 			);
