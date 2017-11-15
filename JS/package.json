@@ -1,0 +1,17 @@
+{
+  "name": "sentimentalist",
+  "version": "1.0.0",
+  "description": "Get the sentiment of a given English string.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors"
+  },
+  "author": "Johannes Fahrenkrug",
+  "license": "MIT",
+  "dependencies": {
+    "sentiment": "^4.1.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
