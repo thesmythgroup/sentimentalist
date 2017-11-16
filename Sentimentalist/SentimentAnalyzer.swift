@@ -17,19 +17,7 @@ class SentimentAnalyzer: NSObject {
     private let context: JSContext
     
     private override init() {
-        let jsCode = """
-         // From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-         function randomNumber(min, max) {
-             min = Math.ceil(min);
-             max = Math.floor(max);
-             //The maximum is inclusive and the minimum is inclusive
-             return Math.floor(Math.random() * (max - min + 1)) + min;
-         }
-         
-         function analyze(sentence) {
-             return randomNumber(-5, 5);
-         }
-         """
+        let jsCode = try? String.init(contentsOf: Bundle.main.url(forResource: "Sentimentalist.bundle", withExtension: "js")!)
         
         // Create a new JavaScript context that will contain the state of our evaluated JS code.
         self.context = JSContext(virtualMachine: self.vm)
@@ -50,11 +38,13 @@ class SentimentAnalyzer: NSObject {
         // Run this asynchronously in the background
         DispatchQueue.global(qos: .userInitiated).async {
             var score = 0
+            let jsModule = self.context.objectForKeyedSubscript("Sentimentalist")
+            let jsAnalyzer = jsModule?.objectForKeyedSubscript("Analyzer")
             
             // In the JSContext global values can be accessed through `objectForKeyedSubscript`.
             // In Objective-C you can actually write `context[@"analyze"]` but unfortunately that's
             // not possible in Swift yet.
-            if let result = self.context.objectForKeyedSubscript("analyze").call(withArguments: [sentence]) {
+            if let result = jsAnalyzer?.objectForKeyedSubscript("analyze").call(withArguments: [sentence]) {
                 score = Int(result.toInt32())
             }
             

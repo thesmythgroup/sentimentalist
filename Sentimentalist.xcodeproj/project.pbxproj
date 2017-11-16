@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F7C11501FBDF1AE006A525B /* Sentimentalist.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C114F1FBDF1AE006A525B /* Sentimentalist.bundle.js */; };
 		8F7CF7841FBBA799006A525B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7831FBBA799006A525B /* AppDelegate.swift */; };
 		8F7CF7861FBBA799006A525B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7851FBBA799006A525B /* ViewController.swift */; };
 		8F7CF7891FBBA799006A525B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7CF7871FBBA799006A525B /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F7C114F1FBDF1AE006A525B /* Sentimentalist.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Sentimentalist.bundle.js; path = JS/dist/Sentimentalist.bundle.js; sourceTree = SOURCE_ROOT; };
 		8F7CF7801FBBA799006A525B /* Sentimentalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentimentalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7CF7831FBBA799006A525B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F7CF7851FBBA799006A525B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		8F7CF7821FBBA799006A525B /* Sentimentalist */ = {
 			isa = PBXGroup;
 			children = (
+				8F7C114F1FBDF1AE006A525B /* Sentimentalist.bundle.js */,
 				8F7CF7831FBBA799006A525B /* AppDelegate.swift */,
 				8F7CF7851FBBA799006A525B /* ViewController.swift */,
 				8F7CF7871FBBA799006A525B /* Main.storyboard */,
@@ -185,6 +188,7 @@
 				8F7CF78E1FBBA799006A525B /* LaunchScreen.storyboard in Resources */,
 				8F7CF78B1FBBA799006A525B /* Assets.xcassets in Resources */,
 				8F7CF7891FBBA799006A525B /* Main.storyboard in Resources */,
+				8F7C11501FBDF1AE006A525B /* Sentimentalist.bundle.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
