@@ -18,9 +18,19 @@ class SentimentAnalyzer: NSObject {
     
     private override init() {
         let jsCode = try? String.init(contentsOf: Bundle.main.url(forResource: "Sentimentalist.bundle", withExtension: "js")!)
+
+        // The Swift closure needs @convention(block) because JSContext's setObject:forKeyedSubscript: method
+        // expects an Objective-C compatible block in this instance.
+        // For more information check out https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Attributes.html#//apple_ref/doc/uid/TP40014097-CH35-ID350
+        let nativeLog: @convention(block) (String) -> Void = { message in
+            NSLog("JS Log: \(message)")
+        }
         
         // Create a new JavaScript context that will contain the state of our evaluated JS code.
         self.context = JSContext(virtualMachine: self.vm)
+        
+        // Register our native logging function in the JS context
+        self.context.setObject(nativeLog, forKeyedSubscript: "nativeLog" as NSString)
         
         // Evaluate the JS code that defines the functions to be used later on.
         self.context.evaluateScript(jsCode)

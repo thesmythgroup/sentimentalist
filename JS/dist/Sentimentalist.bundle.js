@@ -76,7 +76,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 class Analyzer {
     static analyze(phrase) {
-        return __WEBPACK_IMPORTED_MODULE_0_sentiment__(phrase)["score"];
+        // Make sure nativeLog is defined and is a function
+        if (typeof nativeLog === 'function') {
+            nativeLog(`Analyzing '${phrase}'`)
+        }
+
+        let result = __WEBPACK_IMPORTED_MODULE_0_sentiment__(phrase)
+        return result['score']
     }
 }
 /* harmony export (immutable) */ __webpack_exports__["Analyzer"] = Analyzer;
