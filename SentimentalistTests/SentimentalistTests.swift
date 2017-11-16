@@ -11,25 +11,35 @@ import XCTest
 
 class SentimentalistTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAnalyze() {
+        let positiveExpectation = expectation(description: "Call positive completion block")
+        let negativeExpectation = expectation(description: "Call negative completion block")
+        
+        SentimentAnalyzer.shared.analyze("I love cats", completion: { (score) in
+            positiveExpectation.fulfill()
+            XCTAssertEqual(score, 3)
+        })
+        
+        SentimentAnalyzer.shared.analyze("I dislike zuchinis", completion: { (score) in
+            negativeExpectation.fulfill()
+            XCTAssertEqual(score, -2)
+        })
+        
+        waitForExpectations(timeout: 1, handler: nil)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testEmojiForScore() {
+        XCTAssertEqual(SentimentAnalyzer.shared.emoji(forScore: 4), "😃")
+        XCTAssertEqual(SentimentAnalyzer.shared.emoji(forScore: -2), "🙁")
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
+
+    func testPerformance() {
         self.measure {
-            // Put the code you want to measure the time of here.
+            let callbackExpectation = expectation(description: "Call completion block")
+            SentimentAnalyzer.shared.analyze("I love cats", completion: { (score) in
+                callbackExpectation.fulfill()
+            })
+            waitForExpectations(timeout: 10, handler: nil)
         }
     }
     
