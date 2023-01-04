@@ -11,10 +11,19 @@ import Combine
 @MainActor
 class ViewModel: ObservableObject {
     /// The sentence to be analyzed
-    @Published var sentence = ""
+    @Published var sentence = "" {
+        didSet {
+            if (sentence != oldValue) {
+                Task {
+                    let score = await SentimentAnalyzer.shared.analyze(sentence)
+                    emoji = SentimentAnalyzer.shared.emoji(forScore: score)
+                }
+            }
+        }
+    }
     
     /// The emoji representing the sentiment of the current sentence
-    @Published var emoji = "😐"
+    @Published var emoji = SentimentAnalyzer.shared.emoji(forScore: 0)
 }
 
 struct ContentView: View {
