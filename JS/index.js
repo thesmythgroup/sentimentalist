@@ -6,9 +6,9 @@ export class Analyzer {
         if (typeof nativeLog === 'function') {
             nativeLog(`Analyzing '${phrase}'`)
         }
-
+        
         let sentiment = new Sentiment()
         let result = sentiment.analyze(phrase)
         return result['score']
     }
-};
+}

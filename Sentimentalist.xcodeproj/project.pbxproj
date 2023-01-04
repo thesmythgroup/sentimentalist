@@ -3,54 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F7C11501FBDF1AE006A525B /* Sentimentalist.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C114F1FBDF1AE006A525B /* Sentimentalist.bundle.js */; };
-		8F7CF7841FBBA799006A525B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7831FBBA799006A525B /* AppDelegate.swift */; };
-		8F7CF7861FBBA799006A525B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7851FBBA799006A525B /* ViewController.swift */; };
-		8F7CF7891FBBA799006A525B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7CF7871FBBA799006A525B /* Main.storyboard */; };
-		8F7CF78B1FBBA799006A525B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7CF78A1FBBA799006A525B /* Assets.xcassets */; };
-		8F7CF78E1FBBA799006A525B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7CF78C1FBBA799006A525B /* LaunchScreen.storyboard */; };
-		8F7CF7991FBBA799006A525B /* SentimentalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7981FBBA799006A525B /* SentimentalistTests.swift */; };
-		8F7CF7A41FBBABD1006A525B /* SentimentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7CF7A31FBBABD1006A525B /* SentimentAnalyzer.swift */; };
+		8F2208032962DEE60083F8BC /* SentimentalistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2208022962DEE60083F8BC /* SentimentalistApp.swift */; };
+		8F2208052962DEE60083F8BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2208042962DEE60083F8BC /* ContentView.swift */; };
+		8F2208072962DEE90083F8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2208062962DEE90083F8BC /* Assets.xcassets */; };
+		8F2208142962DEE90083F8BC /* SentimentalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2208132962DEE90083F8BC /* SentimentalistTests.swift */; };
+		8F22082D2962EB150083F8BC /* SentimentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */; };
+		8F22082F29633A520083F8BC /* Sentimentalist.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F7CF7951FBBA799006A525B /* PBXContainerItemProxy */ = {
+		8F2208102962DEE90083F8BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8F7CF7781FBBA799006A525B /* Project object */;
+			containerPortal = 8F2207F72962DEE60083F8BC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F7CF77F1FBBA799006A525B;
+			remoteGlobalIDString = 8F2207FE2962DEE60083F8BC;
 			remoteInfo = Sentimentalist;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F7C114F1FBDF1AE006A525B /* Sentimentalist.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Sentimentalist.bundle.js; path = JS/dist/Sentimentalist.bundle.js; sourceTree = SOURCE_ROOT; };
-		8F7CF7801FBBA799006A525B /* Sentimentalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentimentalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F7CF7831FBBA799006A525B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F7CF7851FBBA799006A525B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F7CF7881FBBA799006A525B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F7CF78A1FBBA799006A525B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F7CF78D1FBBA799006A525B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8F7CF78F1FBBA799006A525B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F7CF7941FBBA799006A525B /* SentimentalistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentalistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F7CF7981FBBA799006A525B /* SentimentalistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentalistTests.swift; sourceTree = "<group>"; };
-		8F7CF79A1FBBA799006A525B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F7CF7A31FBBABD1006A525B /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
+		8F2207FF2962DEE60083F8BC /* Sentimentalist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentimentalist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2208022962DEE60083F8BC /* SentimentalistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentalistApp.swift; sourceTree = "<group>"; };
+		8F2208042962DEE60083F8BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F2208062962DEE90083F8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F22080F2962DEE90083F8BC /* SentimentalistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentalistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2208132962DEE90083F8BC /* SentimentalistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentalistTests.swift; sourceTree = "<group>"; };
+		8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
+		8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Sentimentalist.bundle.js; path = JS/dist/Sentimentalist.bundle.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8F7CF77D1FBBA799006A525B /* Frameworks */ = {
+		8F2207FC2962DEE60083F8BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F7CF7911FBBA799006A525B /* Frameworks */ = {
+		8F22080C2962DEE90083F8BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,44 +54,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F7CF7771FBBA799006A525B = {
+		8F2207F62962DEE60083F8BC = {
 			isa = PBXGroup;
 			children = (
-				8F7CF7821FBBA799006A525B /* Sentimentalist */,
-				8F7CF7971FBBA799006A525B /* SentimentalistTests */,
-				8F7CF7811FBBA799006A525B /* Products */,
+				8F2208012962DEE60083F8BC /* Sentimentalist */,
+				8F2208122962DEE90083F8BC /* SentimentalistTests */,
+				8F2208002962DEE60083F8BC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8F7CF7811FBBA799006A525B /* Products */ = {
+		8F2208002962DEE60083F8BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F7CF7801FBBA799006A525B /* Sentimentalist.app */,
-				8F7CF7941FBBA799006A525B /* SentimentalistTests.xctest */,
+				8F2207FF2962DEE60083F8BC /* Sentimentalist.app */,
+				8F22080F2962DEE90083F8BC /* SentimentalistTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F7CF7821FBBA799006A525B /* Sentimentalist */ = {
+		8F2208012962DEE60083F8BC /* Sentimentalist */ = {
 			isa = PBXGroup;
 			children = (
-				8F7C114F1FBDF1AE006A525B /* Sentimentalist.bundle.js */,
-				8F7CF7831FBBA799006A525B /* AppDelegate.swift */,
-				8F7CF7851FBBA799006A525B /* ViewController.swift */,
-				8F7CF7871FBBA799006A525B /* Main.storyboard */,
-				8F7CF78A1FBBA799006A525B /* Assets.xcassets */,
-				8F7CF78C1FBBA799006A525B /* LaunchScreen.storyboard */,
-				8F7CF78F1FBBA799006A525B /* Info.plist */,
-				8F7CF7A31FBBABD1006A525B /* SentimentAnalyzer.swift */,
+				8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */,
+				8F2208022962DEE60083F8BC /* SentimentalistApp.swift */,
+				8F2208042962DEE60083F8BC /* ContentView.swift */,
+				8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */,
+				8F2208062962DEE90083F8BC /* Assets.xcassets */,
 			);
 			path = Sentimentalist;
 			sourceTree = "<group>";
 		};
-		8F7CF7971FBBA799006A525B /* SentimentalistTests */ = {
+		8F2208122962DEE90083F8BC /* SentimentalistTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F7CF7981FBBA799006A525B /* SentimentalistTests.swift */,
-				8F7CF79A1FBBA799006A525B /* Info.plist */,
+				8F2208132962DEE90083F8BC /* SentimentalistTests.swift */,
 			);
 			path = SentimentalistTests;
 			sourceTree = "<group>";
@@ -105,13 +95,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F7CF77F1FBBA799006A525B /* Sentimentalist */ = {
+		8F2207FE2962DEE60083F8BC /* Sentimentalist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F7CF79D1FBBA799006A525B /* Build configuration list for PBXNativeTarget "Sentimentalist" */;
+			buildConfigurationList = 8F2208232962DEE90083F8BC /* Build configuration list for PBXNativeTarget "Sentimentalist" */;
 			buildPhases = (
-				8F7CF77C1FBBA799006A525B /* Sources */,
-				8F7CF77D1FBBA799006A525B /* Frameworks */,
-				8F7CF77E1FBBA799006A525B /* Resources */,
+				8F2207FB2962DEE60083F8BC /* Sources */,
+				8F2207FC2962DEE60083F8BC /* Frameworks */,
+				8F2207FD2962DEE60083F8BC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -119,80 +109,76 @@
 			);
 			name = Sentimentalist;
 			productName = Sentimentalist;
-			productReference = 8F7CF7801FBBA799006A525B /* Sentimentalist.app */;
+			productReference = 8F2207FF2962DEE60083F8BC /* Sentimentalist.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F7CF7931FBBA799006A525B /* SentimentalistTests */ = {
+		8F22080E2962DEE90083F8BC /* SentimentalistTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F7CF7A01FBBA799006A525B /* Build configuration list for PBXNativeTarget "SentimentalistTests" */;
+			buildConfigurationList = 8F2208262962DEE90083F8BC /* Build configuration list for PBXNativeTarget "SentimentalistTests" */;
 			buildPhases = (
-				8F7CF7901FBBA799006A525B /* Sources */,
-				8F7CF7911FBBA799006A525B /* Frameworks */,
-				8F7CF7921FBBA799006A525B /* Resources */,
+				8F22080B2962DEE90083F8BC /* Sources */,
+				8F22080C2962DEE90083F8BC /* Frameworks */,
+				8F22080D2962DEE90083F8BC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F7CF7961FBBA799006A525B /* PBXTargetDependency */,
+				8F2208112962DEE90083F8BC /* PBXTargetDependency */,
 			);
 			name = SentimentalistTests;
 			productName = SentimentalistTests;
-			productReference = 8F7CF7941FBBA799006A525B /* SentimentalistTests.xctest */;
+			productReference = 8F22080F2962DEE90083F8BC /* SentimentalistTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8F7CF7781FBBA799006A525B /* Project object */ = {
+		8F2207F72962DEE60083F8BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "The Smyth Group";
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					8F7CF77F1FBBA799006A525B = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+					8F2207FE2962DEE60083F8BC = {
+						CreatedOnToolsVersion = 14.2;
 					};
-					8F7CF7931FBBA799006A525B = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 8F7CF77F1FBBA799006A525B;
+					8F22080E2962DEE90083F8BC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8F2207FE2962DEE60083F8BC;
 					};
 				};
 			};
-			buildConfigurationList = 8F7CF77B1FBBA799006A525B /* Build configuration list for PBXProject "Sentimentalist" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 8F2207FA2962DEE60083F8BC /* Build configuration list for PBXProject "Sentimentalist" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8F7CF7771FBBA799006A525B;
-			productRefGroup = 8F7CF7811FBBA799006A525B /* Products */;
+			mainGroup = 8F2207F62962DEE60083F8BC;
+			productRefGroup = 8F2208002962DEE60083F8BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F7CF77F1FBBA799006A525B /* Sentimentalist */,
-				8F7CF7931FBBA799006A525B /* SentimentalistTests */,
+				8F2207FE2962DEE60083F8BC /* Sentimentalist */,
+				8F22080E2962DEE90083F8BC /* SentimentalistTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8F7CF77E1FBBA799006A525B /* Resources */ = {
+		8F2207FD2962DEE60083F8BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7CF78E1FBBA799006A525B /* LaunchScreen.storyboard in Resources */,
-				8F7CF78B1FBBA799006A525B /* Assets.xcassets in Resources */,
-				8F7CF7891FBBA799006A525B /* Main.storyboard in Resources */,
-				8F7C11501FBDF1AE006A525B /* Sentimentalist.bundle.js in Resources */,
+				8F2208072962DEE90083F8BC /* Assets.xcassets in Resources */,
+				8F22082F29633A520083F8BC /* Sentimentalist.bundle.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F7CF7921FBBA799006A525B /* Resources */ = {
+		8F22080D2962DEE90083F8BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,68 +188,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8F7CF77C1FBBA799006A525B /* Sources */ = {
+		8F2207FB2962DEE60083F8BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7CF7A41FBBABD1006A525B /* SentimentAnalyzer.swift in Sources */,
-				8F7CF7861FBBA799006A525B /* ViewController.swift in Sources */,
-				8F7CF7841FBBA799006A525B /* AppDelegate.swift in Sources */,
+				8F22082D2962EB150083F8BC /* SentimentAnalyzer.swift in Sources */,
+				8F2208052962DEE60083F8BC /* ContentView.swift in Sources */,
+				8F2208032962DEE60083F8BC /* SentimentalistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F7CF7901FBBA799006A525B /* Sources */ = {
+		8F22080B2962DEE90083F8BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7CF7991FBBA799006A525B /* SentimentalistTests.swift in Sources */,
+				8F2208142962DEE90083F8BC /* SentimentalistTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8F7CF7961FBBA799006A525B /* PBXTargetDependency */ = {
+		8F2208112962DEE90083F8BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F7CF77F1FBBA799006A525B /* Sentimentalist */;
-			targetProxy = 8F7CF7951FBBA799006A525B /* PBXContainerItemProxy */;
+			target = 8F2207FE2962DEE60083F8BC /* Sentimentalist */;
+			targetProxy = 8F2208102962DEE90083F8BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		8F7CF7871FBBA799006A525B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F7CF7881FBBA799006A525B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8F7CF78C1FBBA799006A525B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F7CF78D1FBBA799006A525B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		8F7CF79B1FBBA799006A525B /* Debug */ = {
+		8F2208212962DEE90083F8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -271,15 +239,16 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -298,8 +267,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -307,20 +277,21 @@
 			};
 			name = Debug;
 		};
-		8F7CF79C1FBBA799006A525B /* Release */ = {
+		8F2208222962DEE90083F8BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -328,15 +299,16 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -349,105 +321,143 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		8F7CF79E1FBBA799006A525B /* Debug */ = {
+		8F2208242962DEE90083F8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sentimentalist/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHPV4CE24U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thesmythgroup.Sentimentalist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8F7CF79F1FBBA799006A525B /* Release */ = {
+		8F2208252962DEE90083F8BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sentimentalist/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHPV4CE24U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thesmythgroup.Sentimentalist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		8F7CF7A11FBBA799006A525B /* Debug */ = {
+		8F2208272962DEE90083F8BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SentimentalistTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHPV4CE24U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thesmythgroup.SentimentalistTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentimentalist.app/Sentimentalist";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentimentalist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sentimentalist";
 			};
 			name = Debug;
 		};
-		8F7CF7A21FBBA799006A525B /* Release */ = {
+		8F2208282962DEE90083F8BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SentimentalistTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZHPV4CE24U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thesmythgroup.SentimentalistTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentimentalist.app/Sentimentalist";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentimentalist.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sentimentalist";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F7CF77B1FBBA799006A525B /* Build configuration list for PBXProject "Sentimentalist" */ = {
+		8F2207FA2962DEE60083F8BC /* Build configuration list for PBXProject "Sentimentalist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F7CF79B1FBBA799006A525B /* Debug */,
-				8F7CF79C1FBBA799006A525B /* Release */,
+				8F2208212962DEE90083F8BC /* Debug */,
+				8F2208222962DEE90083F8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F7CF79D1FBBA799006A525B /* Build configuration list for PBXNativeTarget "Sentimentalist" */ = {
+		8F2208232962DEE90083F8BC /* Build configuration list for PBXNativeTarget "Sentimentalist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F7CF79E1FBBA799006A525B /* Debug */,
-				8F7CF79F1FBBA799006A525B /* Release */,
+				8F2208242962DEE90083F8BC /* Debug */,
+				8F2208252962DEE90083F8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F7CF7A01FBBA799006A525B /* Build configuration list for PBXNativeTarget "SentimentalistTests" */ = {
+		8F2208262962DEE90083F8BC /* Build configuration list for PBXNativeTarget "SentimentalistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F7CF7A11FBBA799006A525B /* Debug */,
-				8F7CF7A21FBBA799006A525B /* Release */,
+				8F2208272962DEE90083F8BC /* Debug */,
+				8F2208282962DEE90083F8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8F7CF7781FBBA799006A525B /* Project object */;
+	rootObject = 8F2207F72962DEE60083F8BC /* Project object */;
 }
