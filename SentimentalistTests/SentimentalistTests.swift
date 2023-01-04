@@ -10,26 +10,27 @@ import XCTest
 
 final class SentimentalistTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAnalyze() async {        
+        var score = await SentimentAnalyzer.shared.analyze("I love cats")
+        XCTAssertEqual(score, 3)
+        
+        score = await SentimentAnalyzer.shared.analyze("I dislike zuchinis")
+        XCTAssertEqual(score, -2)
+    }
+    
+    func testEmojiForScore() {
+        XCTAssertEqual(SentimentAnalyzer.shared.emoji(forScore: 4), "😃")
+        XCTAssertEqual(SentimentAnalyzer.shared.emoji(forScore: -2), "🙁")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
+    func testPerformance() {
         self.measure {
-            // Put the code you want to measure the time of here.
+            let exp = expectation(description: "Finished")
+            Task {
+              _ = await SentimentAnalyzer.shared.analyze("I love cats")
+              exp.fulfill()
+            }
+            wait(for: [exp], timeout: 10.0)
         }
     }
 

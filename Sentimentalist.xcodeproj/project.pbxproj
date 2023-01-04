@@ -23,13 +23,6 @@
 			remoteGlobalIDString = 8F2207FE2962DEE60083F8BC;
 			remoteInfo = Sentimentalist;
 		};
-		8F22081A2962DEE90083F8BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F2207F72962DEE60083F8BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F2207FE2962DEE60083F8BC;
-			remoteInfo = Sentimentalist;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +32,6 @@
 		8F2208062962DEE90083F8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F22080F2962DEE90083F8BC /* SentimentalistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentalistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2208132962DEE90083F8BC /* SentimentalistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentalistTests.swift; sourceTree = "<group>"; };
-		8F2208192962DEE90083F8BC /* SentimentalistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentalistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
 		8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Sentimentalist.bundle.js; path = JS/dist/Sentimentalist.bundle.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -53,13 +45,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8F22080C2962DEE90083F8BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F2208162962DEE90083F8BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,7 +68,6 @@
 			children = (
 				8F2207FF2962DEE60083F8BC /* Sentimentalist.app */,
 				8F22080F2962DEE90083F8BC /* SentimentalistTests.xctest */,
-				8F2208192962DEE90083F8BC /* SentimentalistUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +130,6 @@
 			productReference = 8F22080F2962DEE90083F8BC /* SentimentalistTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8F2208182962DEE90083F8BC /* SentimentalistUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F2208292962DEE90083F8BC /* Build configuration list for PBXNativeTarget "SentimentalistUITests" */;
-			buildPhases = (
-				8F2208152962DEE90083F8BC /* Sources */,
-				8F2208162962DEE90083F8BC /* Frameworks */,
-				8F2208172962DEE90083F8BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F22081B2962DEE90083F8BC /* PBXTargetDependency */,
-			);
-			name = SentimentalistUITests;
-			productName = SentimentalistUITests;
-			productReference = 8F2208192962DEE90083F8BC /* SentimentalistUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -178,10 +144,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					8F22080E2962DEE90083F8BC = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 8F2207FE2962DEE60083F8BC;
-					};
-					8F2208182962DEE90083F8BC = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 8F2207FE2962DEE60083F8BC;
 					};
@@ -202,7 +164,6 @@
 			targets = (
 				8F2207FE2962DEE60083F8BC /* Sentimentalist */,
 				8F22080E2962DEE90083F8BC /* SentimentalistTests */,
-				8F2208182962DEE90083F8BC /* SentimentalistUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,13 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8F22080D2962DEE90083F8BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F2208172962DEE90083F8BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,13 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F2208152962DEE90083F8BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -266,11 +213,6 @@
 			isa = PBXTargetDependency;
 			target = 8F2207FE2962DEE60083F8BC /* Sentimentalist */;
 			targetProxy = 8F2208102962DEE90083F8BC /* PBXContainerItemProxy */;
-		};
-		8F22081B2962DEE90083F8BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8F2207FE2962DEE60083F8BC /* Sentimentalist */;
-			targetProxy = 8F22081A2962DEE90083F8BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,42 +427,6 @@
 			};
 			name = Release;
 		};
-		8F22082A2962DEE90083F8BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZHPV4CE24U;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thesmythgroup.SentimentalistUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Sentimentalist;
-			};
-			name = Debug;
-		};
-		8F22082B2962DEE90083F8BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZHPV4CE24U;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thesmythgroup.SentimentalistUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Sentimentalist;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,15 +453,6 @@
 			buildConfigurations = (
 				8F2208272962DEE90083F8BC /* Debug */,
 				8F2208282962DEE90083F8BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8F2208292962DEE90083F8BC /* Build configuration list for PBXNativeTarget "SentimentalistUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F22082A2962DEE90083F8BC /* Debug */,
-				8F22082B2962DEE90083F8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
