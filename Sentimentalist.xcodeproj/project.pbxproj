@@ -12,6 +12,7 @@
 		8F2208072962DEE90083F8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2208062962DEE90083F8BC /* Assets.xcassets */; };
 		8F2208142962DEE90083F8BC /* SentimentalistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2208132962DEE90083F8BC /* SentimentalistTests.swift */; };
 		8F22082D2962EB150083F8BC /* SentimentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */; };
+		8F22082F29633A520083F8BC /* Sentimentalist.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		8F2208132962DEE90083F8BC /* SentimentalistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentalistTests.swift; sourceTree = "<group>"; };
 		8F2208192962DEE90083F8BC /* SentimentalistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentalistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
+		8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Sentimentalist.bundle.js; path = JS/dist/Sentimentalist.bundle.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		8F2208012962DEE60083F8BC /* Sentimentalist */ = {
 			isa = PBXGroup;
 			children = (
+				8F22082E29633A520083F8BC /* Sentimentalist.bundle.js */,
 				8F2208022962DEE60083F8BC /* SentimentalistApp.swift */,
 				8F2208042962DEE60083F8BC /* ContentView.swift */,
 				8F22082C2962EB150083F8BC /* SentimentAnalyzer.swift */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2208072962DEE90083F8BC /* Assets.xcassets in Resources */,
+				8F22082F29633A520083F8BC /* Sentimentalist.bundle.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

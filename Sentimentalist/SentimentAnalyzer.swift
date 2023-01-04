@@ -16,19 +16,7 @@ class SentimentAnalyzer {
     private let context: JSContext
     
     private init() {
-        let jsCode = """
-         // From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-         function randomNumber(min, max) {
-             min = Math.ceil(min);
-             max = Math.floor(max);
-             //The maximum is inclusive and the minimum is inclusive
-             return Math.floor(Math.random() * (max - min + 1)) + min;
-         }
-         
-         function analyze(sentence) {
-             return randomNumber(-5, 5);
-         }
-         """
+        let jsCode = try? String.init(contentsOf: Bundle.main.url(forResource: "Sentimentalist.bundle", withExtension: "js")!)
         
         // Create a new JavaScript context that will contain the state of our evaluated JS code.
         context = JSContext(virtualMachine: vm)
@@ -42,7 +30,9 @@ class SentimentAnalyzer {
     ///     - sentence: The sentence to analyze
     /// - Returns : The sentiment score
     func analyze(_ sentence: String) async -> Int {
-        if let result = context.globalObject.invokeMethod("analyze", withArguments: [sentence]) {
+        let jsModule = self.context.objectForKeyedSubscript("Sentimentalist")
+        let jsAnalyzer = jsModule?.objectForKeyedSubscript("Analyzer")
+        if let result = jsAnalyzer?.invokeMethod("analyze", withArguments: [sentence]) {
             return Int(result.toInt32())
         }
         
